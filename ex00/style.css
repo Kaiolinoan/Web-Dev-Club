@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+    font-family: "Sansation", Arial;
+    font-size: 18px;
+    background-color: #262525;
+
+}
+
+h1 {
+    color: #561961;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+}

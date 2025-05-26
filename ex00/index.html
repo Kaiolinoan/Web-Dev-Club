@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex00</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Register</h1>
+    <div class="form">
+        <form action="index.html" method="post"></form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="surname">Surname:</label>
+        <input type="text" name="surname" id="surname">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <label>Gender:</label> 
+        <label for="gender">Male</label>
+        <input type="radio" name="male" id="male">
+
+        <label for="gender">Female</label>
+        <input type="radio" name="female" id="female">
+
+        <label for="gender">I don't wanna tell</label>
+        <input type="radio" name="neutral" id="neutral">
+
+        <select name="dropdown" id="dropdown">
+            <option value="Select">Select an option</option>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+        </select>
+
+        <label for="tos">Terms of Service</label>
+        <input type="checkbox" name="tos" id="tos">
+
+        <input type="submit" value="Send" onclick="window.alert('ola')">
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
