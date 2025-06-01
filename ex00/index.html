@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex00</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Register</h1>
     <div class="form">
+        <h1>Register</h1>
         <form action="index.html" method="post"></form>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name">
@@ -19,27 +21,37 @@
         <label for="email">Email:</label>
         <input type="email" name="email" id="email">
 
-        <label>Gender:</label> 
-        <label for="gender">Male</label>
-        <input type="radio" name="male" id="male">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
 
-        <label for="gender">Female</label>
-        <input type="radio" name="female" id="female">
+        <div class="radio">
+            <label>Gender:</label>
+            <label class="custom-radio" for="male">
+                <input type="radio" name="gender" id="male">
+                <span class="radio-mark"></span>
+                Male
+            </label>
 
-        <label for="gender">I don't wanna tell</label>
-        <input type="radio" name="neutral" id="neutral">
-
+            <label class="custom-radio" for="female">
+                <input type="radio" name="gender" id="female">
+                <span class="radio-mark"></span>
+                Female
+            </label>
+        </div>
+        <label for="area">Which area do you prefer?</label>
         <select name="dropdown" id="dropdown">
             <option value="Select">Select an option</option>
             <option value="Front-end">Front-end</option>
             <option value="Back-end">Back-end</option>
         </select>
 
-        <label for="tos">Terms of Service</label>
-        <input type="checkbox" name="tos" id="tos">
+        <div class="checkbox">
+            <label for="tos">Terms of Service</label>
+            <input type="checkbox" name="tos" id="tos">
+        </div>
 
-        <input type="submit" value="Send" onclick="window.alert('ola')">
+        <input type="submit" value="Send" onclick="window.alert('Form sent successfully')">
     </div>
-    <script src="scripts.js"></script>
 </body>
+
 </html>

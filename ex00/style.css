@@ -9,22 +9,164 @@ body {
     font-family: "Sansation", Arial;
     font-size: 18px;
     background-color: #262525;
-
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 h1 {
     color: #561961;
     text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+form {
+    margin-top: 1rem;
 }
 
 .form {
-    display: flex;
+    width: 90%;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 3px solid #561961;
+    border-radius: 8px;
+    box-shadow: 05px 05px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    color: #fff;
+
+}
+
+input {
+    box-shadow: 05px 05px rgba(0, 0, 0, 0.15);
+
+}
+
+.radio label {
+    display: inline;
+    margin-right: 1rem;
+}
+
+
+/*Radio*/
+
+.radio {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.custom-radio {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    margin-right: 20px;
+    cursor: pointer;
     position: relative;
-    text-align: center;
-    margin: 20px;
-    text-align: center;
-    width: 500px;
-    height: 500px;
+}
+
+.radio-mark {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #561961;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.custom-radio input[type="radio"]:checked+.radio-mark::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+
+/*Checkbox*/
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+}
+
+.checkbox label {
+    margin: 0;
+}
+
+
+
+.checkbox input[type="checkbox"] {
+    appearance: none;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #262525;
+    border-radius: 4px;
+    display: inline;
+    border: 2px solid #561961;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked {
+    background-image: url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m 3 0 c -1.644531 0 -3 1.355469 -3 3 v 10 c 0 1.644531 1.355469 3 3 3 h 10 c 1.644531 0 3 -1.355469 3 -3 v -10 c 0 -1.644531 -1.355469 -3 -3 -3 z m 0 2 h 10 c 0.421875 0 0.765625 0.234375 0.917969 0.585938 l -0.667969 0.757812 l -6.296875 7.195312 l -2.246094 -2.246093 c -0.390625 -0.390625 -1.023437 -0.390625 -1.414062 0 s -0.390625 1.027343 0 1.417969 l 3 3 c 0.410156 0.40625 1.078125 0.386718 1.460937 -0.050782 l 6.246094 -7.136718 v 7.476562 c 0 0.570312 -0.429688 1 -1 1 h -10 c -0.570312 0 -1 -0.429688 -1 -1 v -10 c 0 -0.570312 0.429688 -1 1 -1 z m 0 0' fill='%232e3436'/%3E%3C/svg%3E");
+    background-color: #fff;
+    background-position: center;
+    border: 2px solid rgb(14, 13, 13);
+    padding: 2px;
+
+}
+
+/*inputs*/
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    border: 2px solid #561961;
+    border-radius: 5px;
+    background-color: #262525;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    appearance: none;
+    width: 100%;
+    padding: 10px;
+    background-color: #262525;
+    color: #fff;
+    border: 2px solid #561961;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #561961;
+    border: 2px solid black;
+    box-shadow: 05px 05px rgba(0, 0, 0, 0.3);
+
 }
